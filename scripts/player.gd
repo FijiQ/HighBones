@@ -25,10 +25,4 @@ func _physics_process(delta):
 	
 	# Атака дымом на Space
 	if Input.is_action_just_pressed("ui_accept"):
-		spawn_smoke()
-
-func spawn_smoke():
-	# Создаем облако дыма перед игроком
-	var smoke = preload("res://scenes/smoke_cloud.tscn").instantiate()
-	smoke.position = position
-	get_parent().add_child(smoke)
+		print("Smoke attack! (placeholder)")
